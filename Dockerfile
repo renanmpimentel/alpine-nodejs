@@ -1,7 +1,7 @@
 FROM renanmpimentel/docker-alpine
 MAINTAINER renanmpimentel <renan.pimentel@gmail.com>
 
-ENV VERSION=v4.2.3
+ENV VERSION=v4.4.3
 ENV CONFIG_FLAGS="--fully-static" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include CMD=node DOMAIN=nodejs.org
 
 RUN apk add --update curl make gcc g++ python linux-headers paxctl libgcc libstdc++ && \
